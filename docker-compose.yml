@@ -1,0 +1,10 @@
+version: '3'
+services:
+  smtp:
+    image: namshi/smtp
+    container_name: smtp_server
+    environment:
+      - RELAY_NETWORKS=*
+    ports:
+      - "25:25"
+
